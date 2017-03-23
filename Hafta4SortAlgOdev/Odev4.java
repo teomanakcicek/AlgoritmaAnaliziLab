@@ -18,10 +18,8 @@ public class Odev4 {
                     int temp = dizi[i];
                     dizi[i] = dizi[k];
                     dizi[k] = temp;
-
                 }
-            }
-           
+            }       
         }
         return dizi;
     }
@@ -57,7 +55,6 @@ public class Odev4 {
         return dizi;
     }
    
-    
    public static void sort(int[] dizi) {
          
         if (dizi == null || dizi.length == 0) {
@@ -74,7 +71,6 @@ public class Odev4 {
         int j = higherIndex;
         int pivot = array[lowerIndex+(higherIndex-lowerIndex)/2];
         while (i <= j) {
-
             while (array[i] < pivot) {
                 i++;
             }
@@ -98,8 +94,6 @@ public class Odev4 {
         array[i] = array[j];
         array[j] = gecici;
     }
-    
-    
     
     public static void BubbleSortYazdir()
     {
@@ -169,13 +163,10 @@ public class Odev4 {
         System.out.println("\n Quick Sort Calisma Zamani: " + (endTime - startTime) );
     }
     
-    
     public static void main(String[] args) {
-       
        BubbleSortYazdir();
        SelectionSortYazdir();
        InsertionSortYazdir();
        QuickSortYazdir();
     }
-    
 }
